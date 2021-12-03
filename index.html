@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head setup and css linkage-->
+  <head>
+      <link rel="stylesheet" href="index.css">
+      <title>Scrabble</title>
+  </head>
+<!--body setup-->
+  <body>
+    <h1>Scrabble</h1>
+    <div id="rules">Welcome to Scrabble! This game is played by basic rules of Scrabble. You are given 7 randomly generated letters out of a pool of other letters.
+      You must create a word out of those letters. Each letter has a value and slotting a letter into a pink slot will double the value of the letter.
+      Best of luck and have fun! 
+    </div>
+    <div id="s">score:0</div>
+    <div id="hs">highscore:0</div>
+    <div id="cw">current word:</div>
+    <div class="board" id="board">
+      <div class="boarde" id="slot1" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+      <div class="boarde" id="slot2"></div>
+      <div class="boarde" id="slot3"></div>
+      <div class="boarde" id="slot4"></div>
+      <div class="boarde" id="slot5"></div>
+      <div class="boarde" id="slot6"></div>
+      <div class="boarde" id="slot7"></div>
+    </div>
+
+    <button type="Rbutton" onclick="reset2();">Reset</button>
+    <button type="Sbutton" onclick="reset1();">Retry</button>
+    <button type="Sbutton" onclick="submit();">Submit</button>
+    
+    <div class="shelf" id="shelf"ondragover="onDragOver(event)" ondrop="onDropRet(event)">
+    </div>
+
+
+<!--script linkage-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src='index.js'></script>
+  </body>
+</html>

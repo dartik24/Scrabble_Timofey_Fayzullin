@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+    margin: auto;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size:xx-large;
+    font-style: italic;
+    text-decoration: underline;
+    color: bisque;
+  }
+
+  .shelf {
+    background-image: url("images/istockphoto-1258849375-170667a.jpg");
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 12px;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-image: url("images/istockphoto-1258849375-170667a.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 12px;
+  }
+
+  .boarde{
+      background-color: antiquewhite;
+      height: 100px;
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      border-style:solid;
+      border-color: black;
+      border-radius: 12px;
+  }
+
+  .box {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bolder;
+    border-style:solid;
+    border-color: black;
+    border-radius: 12px;
+    background-size: contain;
+  }
+  
+  .box.over {
+    border: 3px dotted #666;
+  }
+  
+  button{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 12px;
+    width: 100px;
+    height: 30px
+  }
+
+  #s{
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: bisque;
+  }
+
+  #hs{
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: bisque;
+  }
+
+  #slot3, #slot6{
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-color: black;
+    border-radius: 12px;
+  }
+
+  #cw{
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: bisque;
+  }
+
+  #rules{
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin: auto;
+    color: bisque;
+  }
+
+  [draggable] {
+    user-select: none;
+  }
