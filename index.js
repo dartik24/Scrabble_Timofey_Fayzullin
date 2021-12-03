@@ -112,7 +112,7 @@ function genHand(){
       var char = characters.charAt(Math.floor(Math.random() * charactersLength))
     }
     ammount[characters.indexOf(char)] = ammount[characters.indexOf(char)] - 1;
-    insert += "<div draggable=\"true\" class=\"box\" id=\"box" + i +  char + "\" ondragstart=\"onDragStart(event)\" style=\"background-image: url('images/Scrabble_Tile_" + char + ".jpg');\"></div>";
+    insert += "<div draggable=\"true\" class=\"box\" id=\"box" + i +  char + "\" ondragstart=\"onDragStart(event)\" style=\"background-image: url('images/Scrabble_Tile_" + char.toUpperCase(); + ".jpg');\"></div>";
     i = i + 1;
   }
   container2.innerHTML = insert;
